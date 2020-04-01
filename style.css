@@ -1,0 +1,54 @@
+.main-container {
+  display: grid;
+  margin: 0 auto;
+  grid-template-areas:
+    "top"
+    "middle"
+    "bottom";
+  grid-template-columns: 1fr;
+  grid-template-rows: 6fr 3fr 1fr;
+  width: 65%;
+}
+
+.top {
+  grid: top;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  margin: 100px auto 50px auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  background-color: grey;
+  align-items: center;
+  justify-items: center;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.nav div {
+  display: flex;
+  position: relative;
+}
+
+.nav div i {
+  position: absolute;
+  top: 7px;
+  left: 8px;
+}
+
+.middle {
+  grid: middle;
+}
+
+.bottom {
+  grid: bottom;
+}
