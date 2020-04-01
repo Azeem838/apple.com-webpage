@@ -27,21 +27,46 @@
 /* Nav Bar */
 
 .nav {
-  margin: 100px auto 150px auto;
-  width: 65%;
+  margin: 80px auto 120px auto;
+  width: 70%;
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  background-color: grey;
+  grid-template-columns: repeat(9, 1fr) auto;
+  background:
+    -webkit-gradient(
+      linear,
+      0 0,
+      0 100%,
+      from(rgba(0, 0, 0, 0.2)),
+      color-stop(0.05, rgba(0, 0, 0, 0)),
+      color-stop(0.97, rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 0.45))
+    ),
+    -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0.2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2))),
+    -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
   align-items: center;
   justify-items: center;
   border-radius: 4px;
-  border: 1px solid black;
+  border: 1px solid #808080;
 }
 
 .nav a {
   color: white;
+  font-size: 16px;
   text-decoration: none;
   text-align: center;
+  justify-self: stretch;
+  align-self: stretch;
+  border-right: 1px solid #808080;
+  padding: 8px 0;
+}
+
+.bottom a {
+  color: rgb(0, 136, 204);
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: #3a3a3a;
 }
 
 .nav div {
@@ -50,7 +75,14 @@
 }
 
 .nav div input {
-  background-color: gray;
+  background: #707070;
+  outline: none;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  border-bottom-style: none;
+  padding-left: 10px;
+  order: 2;
 }
 
 .line-3 svg {
@@ -58,9 +90,13 @@
 }
 
 .nav div svg {
-  position: absolute;
-  top: 3px;
-  left: 8px;
+  /* position: absolute;
+  top: 2px;
+  left: -12px; */
+  color: white;
+  padding-left: 10px;
+  grid-column: 10/11;
+  order: 1;
 }
 
 /* Text Below Nav */
@@ -125,8 +161,14 @@
   grid-template-columns: 200px auto auto;
   font-size: 10px;
   margin-top: 20px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family:
+    "Lucida Sans",
+    "Lucida Sans Regular",
+    "Lucida Grande",
+    "Lucida Sans Unicode",
+    Geneva,
+    Verdana,
+    sans-serif;
 }
 
 .links {
@@ -135,10 +177,14 @@
   padding-left: 50px;
 }
 
+.flag {
+  position: relative;
+}
+
 .links a img {
   position: absolute;
-  right: 310px;
-  bottom: -316px;
+  right: -20px;
+  bottom: -2px;
 }
 
 .terms {
@@ -147,11 +193,6 @@
 
 .privacy-policy {
   border-left: 1px solid gray;
-}
-
-.bottom a {
-  color: rgb(0, 136, 204);
-  text-decoration: none;
 }
 
 .links a:not(:last-child) {
