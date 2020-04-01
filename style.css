@@ -7,18 +7,29 @@
     "bottom";
   grid-template-columns: 1fr;
   grid-template-rows: 6fr 3fr 1fr;
-  width: 65%;
+  width: 85%;
+  font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
+/* Top Section */
 
 .top {
   grid: top;
   display: flex;
   flex-direction: column;
+  background-image: url("https://web.archive.org/web/20140226220919im_/http://images.apple.com/v/home/as/images/your_verse_hero_2x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-origin: padding-box;
+  background-size: 1440px 1315px;
 }
+
+/* Nav Bar */
 
 .nav {
   margin: 100px auto 50px auto;
-  width: 80%;
+  width: 65%;
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   background-color: grey;
@@ -45,9 +56,51 @@
   left: 8px;
 }
 
+/* Text Below Nav */
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.line-1 {
+  font-size: 65px;
+  margin: 30px auto;
+  line-height: 36px;
+  text-decoration: none;
+  color: white;
+}
+
+.line-2 {
+  font-size: 35px;
+  margin: 30px auto;
+  line-height: 45px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.line-3 {
+  font-size: 28px;
+  margin: 30px auto;
+  line-height: 36px;
+  text-decoration: none;
+  color: white;
+}
+
+.line-3:hover {
+  text-decoration: underline;
+}
+
+/* Middle Section */
+
 .middle {
   grid: middle;
 }
+
+/* Bottom Section */
 
 .bottom {
   grid: bottom;
