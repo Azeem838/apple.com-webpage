@@ -11,8 +11,6 @@
   font-family: "Raleway", sans-serif;
 }
 
-/* Top Section */
-
 .top {
   grid: top;
   display: flex;
@@ -24,25 +22,12 @@
   background-size: 100%;
 }
 
-/* Nav Bar */
-
 .nav {
   margin: 80px auto 120px auto;
   width: 70%;
   display: grid;
   grid-template-columns: repeat(9, 1fr) auto;
-  background:
-    -webkit-gradient(
-      linear,
-      0 0,
-      0 100%,
-      from(rgba(0, 0, 0, 0.2)),
-      color-stop(0.05, rgba(0, 0, 0, 0)),
-      color-stop(0.97, rgba(0, 0, 0, 0)),
-      to(rgba(0, 0, 0, 0.45))
-    ),
-    -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0.2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2))),
-    -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
+  background-image: linear-gradient(to top, #838383, #54575a, #8a8a8a);
   align-items: center;
   justify-items: center;
   border-radius: 4px;
@@ -90,16 +75,11 @@
 }
 
 .nav div svg {
-  /* position: absolute;
-  top: 2px;
-  left: -12px; */
   color: white;
   padding-left: 10px;
   grid-column: 10/11;
   order: 1;
 }
-
-/* Text Below Nav */
 
 .text-container {
   display: flex;
@@ -138,8 +118,6 @@
   text-decoration: underline;
 }
 
-/* Middle Section */
-
 .middle {
   grid: middle;
   display: grid;
@@ -152,8 +130,6 @@
   justify-self: stretch;
   align-self: stretch;
 }
-
-/* Bottom Section */
 
 .bottom {
   grid: bottom;

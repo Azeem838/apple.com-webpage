@@ -2,7 +2,7 @@
 
 > This project was to clone the Apple.com webpage using backgrounds and gradient colors.
 
-![screenshot](/images/apple-webpage.png)
+![screenshot](./images/apple-webpage.png)
 
 This project contains the following features:
 
@@ -17,7 +17,7 @@ This project contains the following features:
 
 ## Live Demo
 
-[Live Demo Link](https://azeem838.github.io/apple.com-webpage/)
+[Live Demo Link](https://rawcdn.githack.com/Azeem838/apple.com-webpage/d620185eedd8adce38bddd29b11662e6a8f9166d/index.html)
 
 ## Authors
 
