@@ -1,0 +1,188 @@
+.main-container {
+  display: grid;
+  margin: 0 auto;
+  grid-template-areas:
+    "top"
+    "middle"
+    "bottom";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  width: 75%;
+  font-family: "Raleway", sans-serif;
+}
+
+.top {
+  grid: top;
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://web.archive.org/web/20140226220919im_/http://images.apple.com/v/home/as/images/your_verse_hero_2x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-origin: padding-box;
+  background-size: 100%;
+}
+
+.nav {
+  margin: 80px auto 120px auto;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr) auto;
+  background-image: linear-gradient(to top, #838383, #54575a, #8a8a8a);
+  align-items: center;
+  justify-items: center;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+
+.nav a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  justify-self: stretch;
+  align-self: stretch;
+  border-right: 1px solid #808080;
+  padding: 8px 0;
+}
+
+.bottom a {
+  color: rgb(0, 136, 204);
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: #3a3a3a;
+}
+
+.nav div {
+  display: flex;
+  position: relative;
+}
+
+.nav div input {
+  background: #707070;
+  outline: none;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  border-bottom-style: none;
+  padding-left: 10px;
+  order: 2;
+}
+
+.line-3 svg {
+  padding-left: 10px;
+}
+
+.nav div svg {
+  color: white;
+  padding-left: 10px;
+  grid-column: 10/11;
+  order: 1;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.line-1 {
+  font-size: 65px;
+  margin: 30px auto;
+  line-height: 36px;
+  text-decoration: none;
+  color: white;
+}
+
+.line-2 {
+  font-size: 35px;
+  margin: 30px auto;
+  line-height: 45px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.line-3 {
+  font-size: 28px;
+  margin: 30px auto;
+  line-height: 36px;
+  text-decoration: none;
+  color: white;
+  padding-bottom: 100px;
+}
+
+.line-3:hover {
+  text-decoration: underline;
+}
+
+.middle {
+  grid: middle;
+  display: grid;
+  grid-template-rows: 200px;
+  grid-auto-flow: column;
+  grid-gap: 2px;
+}
+
+.middle .pics {
+  justify-self: stretch;
+  align-self: stretch;
+}
+
+.bottom {
+  grid: bottom;
+  display: grid;
+  grid-template-columns: 200px auto auto;
+  font-size: 10px;
+  margin-top: 20px;
+  font-family:
+    "Lucida Sans",
+    "Lucida Sans Regular",
+    "Lucida Grande",
+    "Lucida Sans Unicode",
+    Geneva,
+    Verdana,
+    sans-serif;
+}
+
+.links {
+  grid-row: 1/2;
+  grid-column: 3/4;
+  padding-left: 50px;
+}
+
+.flag {
+  position: relative;
+}
+
+.links a img {
+  position: absolute;
+  right: -20px;
+  bottom: -2px;
+}
+
+.terms {
+  padding-right: 5px;
+}
+
+.privacy-policy {
+  border-left: 1px solid gray;
+}
+
+.links a:not(:last-child) {
+  border-right: 1px solid gray;
+  padding: 0 4px;
+}
+
+.p {
+  justify-self: start;
+  align-self: start;
+  padding: 7px;
+  grid-column: 2/3;
+}
+
+.bottom a:hover {
+  text-decoration: underline;
+}

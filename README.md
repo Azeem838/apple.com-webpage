@@ -1,57 +1,29 @@
-# Project Name
+# Apple.com Webpage Clone
 
-> One paragraph statement about the project.
+> This project was to clone the Apple.com webpage using backgrounds and gradient colors.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./images/apple-webpage.png)
 
-Additional description about the project and its features.
+This project contains the following features:
+
+1.  Navbar with gradient apple.com colors
+2.  Grid and FlexBox layouts
+3.  Background image
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- HTML5 and CSS
+- Font Awesome Icons
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+[Live Demo Link](https://rawcdn.githack.com/Azeem838/apple.com-webpage/d620185eedd8adce38bddd29b11662e6a8f9166d/index.html)
 
 ## Authors
 
-👤 **Author1**
+👤 Azeem Ahmed
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@Azeem838](https://github.com/Azeem838)
 
 ## 🤝 Contributing
 
@@ -62,12 +34,6 @@ Feel free to check the [issues page](issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
